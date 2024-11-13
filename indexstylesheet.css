@@ -1,0 +1,55 @@
+body {
+    background-color: #a2aac4;
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: black;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; 
+}
+
+li {
+    display: inline-block;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+}
