@@ -1,7 +1,12 @@
+@font-face {
+    font-family: RINGM___;
+    src: url('/fonts/RINGM___.TTF');
+}
+
+
 body {
     background-color: #a2aac4;
     margin: 0;
-    padding: 0;
 }
 
 section{
@@ -11,6 +16,10 @@ section{
     flex-direction: row;
     display: flex;
     justify-content: center;
+}
+section-about-me{
+    color: black;
+    text-align: left;
 }
 
 .image-container img {
