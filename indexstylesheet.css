@@ -2,7 +2,10 @@
     font-family: RINGM___;
     src: url('/fonts/RINGM___.TTF');
 }
-
+@font-face {
+    font-family: Oswald;
+    src: url('/fonts/Oswald.ttf');
+}
 
 body {
     background-color: #a2aac4;
@@ -18,7 +21,9 @@ section{
     justify-content: center;
 }
 section-about-me{
-    color: black;
+    text-align: left;
+}
+section-portfolio{
     text-align: left;
 }
 
