@@ -20,12 +20,19 @@ section{
     display: flex;
     justify-content: center;
 }
+
 section-about-me{
     text-align: left;
 }
+
 section-portfolio{
     text-align: left;
 }
+
+footer{
+    background-color: black;
+}
+
 
 .image-container img {
     max-width: 100%;
