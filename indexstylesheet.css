@@ -46,6 +46,18 @@ footer{
     width: 50%;
 }
 
+div.scroll-container {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+  }
+  
+  div.scroll-container img {
+    align-self: center;
+    padding: 10px;
+  }
+
 ul {
     margin: 0;
     padding: 0;
