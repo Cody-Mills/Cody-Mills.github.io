@@ -54,9 +54,12 @@ div.scroll-container {
   }
   
   div.scroll-container img {
+    max-width: 400px;
+    max-height: 600px;
     align-self: center;
     padding: 10px;
   }
+
 
 ul {
     margin: 0;
