@@ -6,7 +6,6 @@
     font-family: Oswald;
     src: url('/fonts/Oswald.ttf');
 }
-
 body {
     background-color: #a2aac4;
     margin: 0;
@@ -61,11 +60,11 @@ div.scroll-container {
     padding: 10px;
   }
 
-
 ul {
     margin: 0;
     padding: 0;
     list-style-type: none; 
+    
 }
 
 li {
@@ -89,4 +88,8 @@ h2 {
 h3 {
     color: white;
     text-align: center;
+}
+nav {
+    position: sticky;
+    top: 0px;
 }
