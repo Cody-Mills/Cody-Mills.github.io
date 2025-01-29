@@ -28,8 +28,11 @@ section-portfolio{
     text-align: left;
 }
 
-footer{
-    color: black;
+section-footer{
+    background-color: black;
+    color: white;
+    overflow: auto;
+    white-space: nowrap;
 }
 
 
