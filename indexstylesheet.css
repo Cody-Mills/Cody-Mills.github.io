@@ -28,12 +28,7 @@ section-portfolio{
     text-align: left;
 }
 
-section-footer{
-    background-color: black;
-    color: white;
-    overflow: auto;
-    white-space: nowrap;
-}
+
 
 
 .image-container img {
