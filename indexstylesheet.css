@@ -11,15 +11,6 @@ body {
     margin: 0;
 }
 
-section{
-    padding-left: 40px;
-    padding-right: 40px;
-    background-color: black;
-    flex-direction: row;
-    display: flex;
-    justify-content: center;
-}
-
 section-about-me{
     text-align: left;
 }
@@ -89,6 +80,13 @@ h3 {
     text-align: center;
 }
 nav {
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: black;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
     position: sticky;
-    top: 0px;
+    position: -webkit-sticky; /* Safari support */
+    top: 0px; 
 }
