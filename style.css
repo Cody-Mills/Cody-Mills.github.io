@@ -90,3 +90,12 @@ nav {
     position: -webkit-sticky; /* Safari support */
     top: 0px; 
 }
+
+class navlink{
+    color: white;
+    transition: all 0.4s linear;
+}
+
+class navlink:hover{
+    color: yellow;
+}
