@@ -64,21 +64,38 @@ li {
     margin-right: 20px;
     
 }
+/* General Text */
+ h1 {
+    padding-left: 30px; 
+    padding-right: 30px;
+    color: white; 
+    font-size: 27px; margin: 0;
+} 
 
-h1 {
-    color: black;
-    text-align: center;
-}
-
+/* Titles */
 h2 {
-    color: black;
-    text-align: center;
+    color: white;
+    text-align: left;
+    padding-left: 30px; 
+    font-size: 30px; 
+    font-family: Oswald; 
+    src: url('/fonts/Oswald.ttf');
+    text-decoration: underline; margin: 0;
 }
 
+/* Nav */ /* this is kinda used randomly somethimes so dont fuck with it */
 h3 {
     color: white;
     text-align: center;
+
 }
+
+/* Fine Print */
+h5 {
+    text-align: center;
+    font-size: 14px;
+}
+
 nav {
     padding-left: 40px;
     padding-right: 40px;
@@ -89,13 +106,4 @@ nav {
     position: sticky;
     position: -webkit-sticky; /* Safari support */
     top: 0px; 
-}
-
-class navlink{
-    color: white;
-    transition: all 0.4s linear;
-}
-
-class navlink:hover{
-    color: yellow;
 }
