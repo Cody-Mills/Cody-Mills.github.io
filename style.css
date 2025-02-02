@@ -66,8 +66,8 @@ li {
 }
 /* General Text */
  h1 {
-    padding-left: 30px; 
-    padding-right: 30px;
+    padding-left: 50px; 
+    padding-right: 50px;
     color: white; 
     font-size: 27px; margin: 0;
 } 
@@ -76,7 +76,8 @@ li {
 h2 {
     color: white;
     text-align: left;
-    padding-left: 30px; 
+    padding-left: 50px; 
+    padding-right: 50px; 
     font-size: 30px; 
     font-family: Oswald; 
     src: url('/fonts/Oswald.ttf');
