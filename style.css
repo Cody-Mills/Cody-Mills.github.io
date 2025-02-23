@@ -134,5 +134,9 @@ nav {
         padding-left: 20px;
         padding-right: 20px;
     }
-
+    nav {
+        font-size: 16px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
