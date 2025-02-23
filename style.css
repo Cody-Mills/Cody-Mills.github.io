@@ -108,3 +108,24 @@ nav {
     position: -webkit-sticky; /* Safari support */
     top: 0px; 
 }
+
+/* Mobile Responsive Media Queries */
+@media only screen and (max-device-width: 480px)
+{
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    header {
+        width: 100%;
+    }
+    h2 { 
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    h1 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}
