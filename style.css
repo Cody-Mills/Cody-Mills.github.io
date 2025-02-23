@@ -21,12 +21,14 @@ section-portfolio{
 
 
 
-
+/* Title */
 .image-container img {
-    max-width: 100%;
     height: auto;
     display: block;
+
 }
+
+
 
 .center {
     display: block;
@@ -107,16 +109,21 @@ nav {
     position: sticky;
     position: -webkit-sticky; /* Safari support */
     top: 0px; 
+    font-family: RINGM___; 
+    font-size: 20px;
+    src: url('/fonts/RINGM___.TTF')"
 }
 
 /* Mobile Responsive Media Queries */
-@media only screen and (max-device-width: 480px)
+@media only screen and (max-device-width: 500px)
 {
+    /* need to fix the title & the sticky nav */
     html, body {
         max-width: 100%;
         overflow-x: hidden;
     }
-    header {
+    .center
+    {
         width: 100%;
     }
     h2 { 
