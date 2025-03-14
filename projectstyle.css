@@ -193,7 +193,16 @@ h5 {
   }
 
 
+/* pc view */
+@media only screen and (min-width: 1024px) and (max-width: 3840px) 
+{
+  .mySlides img {
+    width: 70%; /* Make images take the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+}
+}
 
+/* mobile view */
 @media only screen and (max-device-width: 500px)
 {
     /* need to fix the title & the sticky nav */
@@ -226,13 +235,40 @@ h5 {
         display: block;
   }
 
-  .slideshow-container {
-    padding-left: 20px;
-  }
+   /* Adjust the slideshow container size */
+   .slideshow-container {
+    max-width: 100%; /* Make the slideshow take the full width */
+    padding-left: 20px; /* Reduce padding for mobile */
+}
+
+/* Adjust the size of the slideshow images */
+.mySlides img {
+    width: 100%; /* Make images take the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Adjust the size of the dots */
+.dot {
+    width: 10px; /* Smaller dots for mobile */
+    height: 10px; /* Smaller dots for mobile */
+    margin: 0 2px; /* Adjust spacing between dots */
+}
+
+/* Adjust the position and size of the number text */
+.numbertext {
+    font-size: 10px; /* Smaller font size for mobile */
+    padding: 5px 8px; /* Adjust padding */
+}
+
+/* Adjust the dots container */
+.dots-container {
+    padding: 5px 0; /* Reduce padding for mobile */
+}
+
  
   .video-embed-div {
         width: 100%;
         height: auto;
-    }
+    
 }
-
+}
