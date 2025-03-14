@@ -11,16 +11,6 @@ body {
     margin: 0;
 }
 
-section-about-me{
-    text-align: left;
-}
-
-section-portfolio{
-    text-align: left;
-}
-
-
-
 /* Title */
 .image-container img {
     height: auto;
@@ -37,21 +27,6 @@ section-portfolio{
     width: 50%;
 }
 
-div.scroll-container {
-    background-color: #333;
-    overflow: auto;
-    white-space: nowrap;
-    padding: 10px;
-  }
-  
-  div.scroll-container img {
-    /*58% of the The image sizes (900x600)*/
-    max-width: 348px;
-    max-height: 522px;
-    align-self: center;
-    padding: 10px;
-  }
-
 ul {
     margin: 0;
     padding: 0;
@@ -66,40 +41,6 @@ li {
     margin-right: 20px;
     
 }
-/* General Text */
- h1 {
-    padding-left: 50px; 
-    padding-right: 50px;
-    color: white; 
-    font-size: 27px; margin: 0;
-} 
-
-/* Titles */
-h2 {
-    color: white;
-    text-align: left;
-    padding-left: 50px; 
-    padding-right: 50px; 
-    font-size: 30px; 
-    font-family: Oswald; 
-    src: url('/fonts/Oswald.ttf');
-    text-decoration: underline; 
-    margin: 0;
-}
-
-/* Nav */ /* this is kinda used randomly somethimes so dont fuck with it */
-h3 {
-    color: white;
-    text-align: center;
-
-}
-
-/* Fine Print */
-h5 {
-    text-align: center;
-    font-size: 14px;
-}
-
 nav {
     padding-left: 40px;
     padding-right: 40px;
@@ -115,7 +56,40 @@ nav {
     src: url('/fonts/RINGM___.TTF')"
 }
 
-/* Mobile Responsive Media Queries */
+/* Titles */
+h2 {
+    color: white;
+    text-align: left;
+    padding-left: 50px; 
+    padding-right: 50px; 
+    font-size: 30px; 
+    font-family: Oswald; 
+    src: url('/fonts/Oswald.ttf');
+    text-decoration: underline; margin: 0;
+}
+
+/* Nav */ /* this is kinda used randomly somethimes so dont fuck with it */
+h3 {
+    color: white;
+    text-align: center;
+
+}
+
+/* General Text */
+h1 {
+    padding-left: 50px; 
+    padding-right: 50px;
+    color: white; 
+    font-size: 27px; 
+    margin: 0;
+} 
+
+/* Fine Print */
+h5 {
+    text-align: center;
+    font-size: 14px;
+}
+
 @media only screen and (max-device-width: 500px)
 {
     /* need to fix the title & the sticky nav */
