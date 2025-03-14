@@ -90,6 +90,16 @@ h5 {
     font-size: 14px;
 }
 
+.video-embed-div {
+    width: 560px; /* you have to have a size or this method doesn't work */
+    height: 315px; /* think about making these max-width instead - might give you some more responsiveness */
+
+    
+    top: 0; right: 0; /* confuse it i guess */
+    bottom: 0; left: 0;
+    margin: auto; /* make em equal */
+}
+
 @media only screen and (max-device-width: 500px)
 {
     /* need to fix the title & the sticky nav */
