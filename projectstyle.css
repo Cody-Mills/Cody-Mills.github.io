@@ -79,7 +79,8 @@ h3 {
 /* General Text */
 h1 {
     flex: 1; /* Allow the h1 text to take up remaining space */
-    padding-left: 20px; /* Add some padding */
+    padding-left: 50px; /* Add some padding */
+    padding-right: 50px;
     color: white; 
     font-size: 27px; 
     margin: 0;
@@ -189,14 +190,26 @@ h5 {
     h2 { 
         padding-left: 20px;
         padding-right: 20px;
+        font-size: 26px;
     }
     h1 {
         padding-left: 20px;
         padding-right: 20px;
+        font-size: 22px;
     }
     nav {
         font-size: 16px;
         padding-left: 10px;
         padding-right: 10px;
     }
+    
+    .flex-container {
+        padding-right: 20px;
+        display: block;
+  }
+
+  .slideshow-container {
+    padding-left: 20px;
+  }
+
 }
