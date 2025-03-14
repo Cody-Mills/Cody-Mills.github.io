@@ -245,6 +245,7 @@ h5 {
 .mySlides img {
     width: 100%; /* Make images take the full width of the container */
     height: auto; /* Maintain aspect ratio */
+    padding-right: 20px;
 }
 
 /* Adjust the size of the dots */
