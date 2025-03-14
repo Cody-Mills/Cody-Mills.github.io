@@ -93,13 +93,27 @@ h5 {
 }
 
 .video-embed-div {
-    width: 560px; /* you have to have a size or this method doesn't work */
-    height: 315px; /* think about making these max-width instead - might give you some more responsiveness */
+  position: relative;
+  width: 560px; /* Adjust as needed */
+  height: 315px; /* Adjust as needed */
+  margin: auto;
+}
 
-    
-    top: 0; right: 0; /* confuse it i guess */
-    bottom: 0; left: 0;
-    margin: auto; /* make em equal */
+.video-embed-div img {
+  width: 100%;
+  height: auto;
+}
+
+.video-embed-div a {
+  display: block;
+  position: relative;
+}
+
+.video-embed-div a div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Flex container to hold slideshow and h1 text */
@@ -118,12 +132,14 @@ h5 {
   margin-left: 0; /* Align the slideshow to the left */
   position: relative; /* Ensure child elements are positioned relative to this container */
   padding-left: 50px;
+  
 }
 
 /* Hide all slides by default */
 .mySlides {
     display: none;
     text-align: left; /* Align images to the left */
+
   }
   
   /* Show the first slide by default */
@@ -170,10 +186,12 @@ h5 {
     animation-duration: 1.5s;
   }
   
+
   @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
   }
+
 
 
 @media only screen and (max-device-width: 500px)
@@ -211,5 +229,10 @@ h5 {
   .slideshow-container {
     padding-left: 20px;
   }
-
+ 
+  .video-embed-div {
+        width: 100%;
+        height: auto;
+    }
 }
+
