@@ -129,71 +129,21 @@ transform: translate(-50%, -50%);
 
 * {box-sizing:border-box}
 
-/* Slideshow container */
-.slideshow-container {
-max-width: 1000px;
-margin-left: 0; /* Align the slideshow to the left */
-position: relative; /* Ensure child elements are positioned relative to this container */
-padding-left: 50px;
+div.scroll-container {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+  }
+  
+  div.scroll-container img {
+    /*58% of the The image sizes (900x600)*/
+    max-width: 348px;
+    max-height: 522px;
+    align-self: center;
+    padding: 10px;
+  }
 
-}
-
-/* Hide all slides by default */
-.mySlides {
-  display: none;
-  text-align: left; /* Align images to the left */
-
-}
-
-/* Show the first slide by default */
-.mySlides:first-child {
-  display: block;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-  left: 0; /* Align number text to the left */
-}
-
-/* The dots/circles */
-.dots-container {
-  width: fit-content; /* Make the dots container only as wide as its content */
-  margin-left: 0; /* Align the dots container to the left */
-  margin-right: auto; /* Center the dots relative to the slideshow container */
-  padding: 10px 0; /* Add some padding */
-}
-
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: white;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
 
 
 /* pc view */
@@ -237,38 +187,6 @@ padding-left: 50px;
       padding-right: 20px;
       display: block;
 }
-
- /* Adjust the slideshow container size */
- .slideshow-container {
-  max-width: 100%; /* Make the slideshow take the full width */
-  padding-left: 20px; /* Reduce padding for mobile */
-}
-
-/* Adjust the size of the slideshow images */
-.mySlides img {
-  width: 100%; /* Make images take the full width of the container */
-  height: auto; /* Maintain aspect ratio */
-}
-
-/* Adjust the size of the dots */
-.dot {
-  width: 20px; /* Smaller dots for mobile */
-  height: 20px; /* Smaller dots for mobile */
-  margin: 0 2px; /* Adjust spacing between dots */
-}
-
-/* Adjust the position and size of the number text */
-.numbertext {
-  font-size: 10px; /* Smaller font size for mobile */
-  padding: 5px 8px; /* Adjust padding */
-}
-
-/* Adjust the dots container */
-.dots-container {
-  padding: 5px 0; /* Reduce padding for mobile */
-}
-
-
 .video-embed-div {
       width: 100%;
       height: auto;
