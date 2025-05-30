@@ -1,0 +1,277 @@
+@font-face {
+  font-family: RINGM___;
+  src: url('/fonts/RINGM___.TTF');
+}
+@font-face {
+  font-family: Oswald;
+  src: url('/fonts/Oswald.ttf');
+}
+body {
+  background-color: #a2aac4;
+  margin: 0;
+}
+
+/* Title */
+.image-container img {
+  height: auto;
+  display: block;
+
+}
+
+section-gifs {
+  max-width: 10px;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; 
+  
+}
+
+li {
+  display: inline-block;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  
+}
+nav {
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: black;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  position: -webkit-sticky; /* Safari support */
+  top: 0px; 
+  font-family: RINGM___; 
+  font-size: 20px;
+  src: url('/fonts/RINGM___.TTF');
+  z-index: 1000; /* Add this line to ensure the nav stays above other content */
+}
+
+/* Titles */
+h2 {
+  color: white;
+  text-align: left;
+  padding-left: 50px; 
+  padding-right: 50px; 
+  font-size: 30px; 
+  font-family: Oswald; 
+  src: url('/fonts/Oswald.ttf');
+  text-decoration: underline; margin: 0;
+}
+
+/* Nav */ /* this is kinda used randomly somethimes so dont fuck with it */
+h3 {
+  color: white;
+  text-align: center;
+
+}
+
+/* General Text */
+h1 {
+  flex: 1; /* Allow the h1 text to take up remaining space */
+  padding-left: 50px; /* Add some padding */
+  padding-right: 50px;
+  color: white; 
+  font-size: 27px; 
+  margin: 0;
+}
+
+/* Fine Print */
+h5 {
+  text-align: center;
+  font-size: 14px;
+}
+
+.video-embed-div {
+position: relative;
+width: 560px; /* Adjust as needed */
+height: 315px; /* Adjust as needed */
+margin: auto;
+}
+
+.video-embed-div img {
+width: 100%;
+height: auto;
+}
+
+.video-embed-div a {
+display: block;
+position: relative;
+}
+
+.video-embed-div a div {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+/* Flex container to hold slideshow and h1 text */
+.flex-container {
+  display: flex; /* Use flexbox to align children side by side */
+  align-items: flex-start; /* Align items to the top */
+  gap: 20px; /* Add space between the slideshow and h1 text */
+  padding-right: 50px;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+max-width: 1000px;
+margin-left: 0; /* Align the slideshow to the left */
+position: relative; /* Ensure child elements are positioned relative to this container */
+padding-left: 50px;
+
+}
+
+/* Hide all slides by default */
+.mySlides {
+  display: none;
+  text-align: left; /* Align images to the left */
+
+}
+
+/* Show the first slide by default */
+.mySlides:first-child {
+  display: block;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  left: 0; /* Align number text to the left */
+}
+
+/* The dots/circles */
+.dots-container {
+  width: fit-content; /* Make the dots container only as wide as its content */
+  margin-left: 0; /* Align the dots container to the left */
+  margin-right: auto; /* Center the dots relative to the slideshow container */
+  padding: 10px 0; /* Add some padding */
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/* pc view */
+@media only screen and (min-width: 1024px) and (max-width: 3840px) 
+{
+.mySlides img {
+  width: 100%; /* Make images take the full width of the container */
+  height: auto; /* Maintain aspect ratio */
+}
+}
+
+/* mobile view */
+@media only screen and (max-device-width: 500px)
+{
+  /* need to fix the title & the sticky nav */
+  html, body {
+      max-width: 100%;
+      overflow-x: hidden;
+  }
+  .center
+  {
+      width: 100%;
+  }
+  h2 { 
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 26px;
+  }
+  h1 {
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 22px;
+  }
+  nav {
+      font-size: 16px;
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+  
+  .flex-container {
+      padding-right: 20px;
+      display: block;
+}
+
+ /* Adjust the slideshow container size */
+ .slideshow-container {
+  max-width: 100%; /* Make the slideshow take the full width */
+  padding-left: 20px; /* Reduce padding for mobile */
+}
+
+/* Adjust the size of the slideshow images */
+.mySlides img {
+  width: 100%; /* Make images take the full width of the container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Adjust the size of the dots */
+.dot {
+  width: 20px; /* Smaller dots for mobile */
+  height: 20px; /* Smaller dots for mobile */
+  margin: 0 2px; /* Adjust spacing between dots */
+}
+
+/* Adjust the position and size of the number text */
+.numbertext {
+  font-size: 10px; /* Smaller font size for mobile */
+  padding: 5px 8px; /* Adjust padding */
+}
+
+/* Adjust the dots container */
+.dots-container {
+  padding: 5px 0; /* Reduce padding for mobile */
+}
+
+
+.video-embed-div {
+      width: 100%;
+      height: auto;
+  
+}
+}
