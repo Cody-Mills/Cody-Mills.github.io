@@ -78,13 +78,18 @@ h3 {
 
 }
 
+h4 {
+  color: black;
+  text-align: center;
+}
+
 /* General Text */
 h1 {
   flex: 1; /* Allow the h1 text to take up remaining space */
   padding-left: 50px; /* Add some padding */
   padding-right: 50px;
   color: white; 
-  font-size: 27px; 
+  font-size: 14px;
   margin: 0;
 }
 
@@ -93,6 +98,8 @@ h5 {
   text-align: center;
   font-size: 14px;
 }
+
+
 
 .video-embed-div {
 position: relative;
@@ -224,12 +231,30 @@ padding-left: 50px;
       font-size: 26px;
   }
   h1 {
-      padding-left: 20px;
-      padding-right: 20px;
-      font-size: 22px;
+      padding-left: 10px;
+      padding-right: 10px;
+      
   }
+
+  h4 {
+    font-size: small;
+    
+  }
+
+  h5 {
+    font-size: x-small;
+  }
+
+  h6 {
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 10px;
+    text-align: center;
+  
+  }
+
   nav {
-      font-size: 16px;
+      font-size: 14px;
       padding-left: 10px;
       padding-right: 10px;
   }
@@ -264,6 +289,11 @@ padding-left: 50px;
   padding: 5px 8px; /* Adjust padding */
 }
 
+.image-container
+{
+  size: 10%;
+}
+
 /* Adjust the dots container */
 .dots-container {
   padding: 5px 0; /* Reduce padding for mobile */
@@ -271,7 +301,7 @@ padding-left: 50px;
 
 
 .video-embed-div {
-      width: 100%;
+      width: 80%;
       height: auto;
   
 }
