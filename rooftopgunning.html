@@ -3,8 +3,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <head> 
         <!-- This is what the name of the tab is at the top-->
-        <title>Cody Mills - Witching Hour</title> 
+        <title>Cody Mills - Rooftop Gunning</title> 
         <link rel="stylesheet" href="projectstyle.css">
+        
     </head>
     <body>
         <script src="/slideshow.js"></script>
@@ -28,12 +29,12 @@
         <section-game>
             <!-- Section Title -->
             <br>
-            <br>
             <h2>
-            WITCHING HOUR - EXPERIENCE DESCRIPTION
+            ROOFTOP GUNNING - GAME DESCRIPTION
             </h2>
             <br>
-            <!-- Flex container to hold slideshow and h1 text -->
+
+<!-- Flex container to hold slideshow and h1 text -->
 <div class="flex-container">
     <!-- Slideshow container -->
     <div class="slideshow-container">
@@ -64,15 +65,14 @@
 
     <!-- h1 text -->
     <h1 style="text-align: left;">
-        Witching Hour is a VR Horror experience where you venture a hedge maze located in a graveyard where you experience paranormal activity. 
-        You explore the graveyard and maze using a flashlight and walkie-talkie as your only light and communication as you attempt to make it to the other side. 
+        You play as an employee of a Postal Service Company where you are working late shifts in isolation, with your only human interaction being your boss on the radio. You start to discover that there is something wrong with the packages comming in, they seem to contain these strange creatures. These monsters are disguising themselves as packages so it is your job to notice the inconsistancies on their packaging to find the monsters and incinerate them.
+        You can play the game on  <a href="https://store.steampowered.com/app/4106300/Boxed_Up/">Steam here </a> or <a href="https://sebastian-lucker.itch.io/boxed-up"> Itch.io here.</a>  </p>
+        <br>
+        This Game was made with <a href="bugbox.html">Box Bug Studios</a>
         <br>
         <br>
-        You can try the experience here (VR HEADSET REQUIRED & MATURE CONTENT WARNING)</a>
-        
-        
+        This Game was displayed in the <a href="https://www.staffs.ac.uk/gradex">GradEx </a> event 2025. 
     </h1>
-
 </div>
         </section-game>
         <section-engine>
@@ -80,28 +80,55 @@
             <br>
             <h2 style="text-align: center;">
                 TECHNICAL INFORMATION
+            <br>
             </h2>
             <h1>
-                I built this experience using the Godot Game Engine using the XR Tools addon. Despite the Godot VR community being very small I found this addon very well developed & I am glad to have contributed to the growing number of XR projects in Godot.
-                This was my first time ever creating anything for VR so there was alot of unique challanges I faced during development. A unique challange of VR is that it can be hard to predict where the players attention is at anytime, this one of the major 
-                issues I had to overcome during development but I feel I did a good job of guiding the player through the goal of the game as well as the most interesting content without ruining immersion.
-            </h1>
-            <br>
-            <h4 style="color: black;">
-                This project was developed using no AI. I used assets that were available for public use with the original sources all cited on the Itch.io page.
+                This game was built in Unreal Engine 5.4. The game was part of a small collabrative team of 26 people with me being one of the 6 programmers. I was a Junior Programmer on this project and it was my first experience with such a large project with so many people working on it. 
+                I found the experience working on this project to be a very good learning experience for: my technical knowledge, experience with Unreal Engine, working in a team and working with other disciplines like Designers & Artists. 
+                <br>
+            <h4>
+                This project was developed using no AI. All assets were custom made for the game by the talented team.
                 <br>
                 Developed from 10th March 2025 - 13th May 2025.
             </h4>
+            <section-gifs>
+                <br>
+                <div class="video-embed-div">
+                        <img src="images/gifs/BU monster.gif" alt="Monsters GIF" style="width: 100%; height: auto;">
+                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                        </div>
+                    </a>
+                </div>
+                
+            </section-gifs>
+                <br>
+                <h1>
+                My Role in this games development was to mostly develop the game A.I for the little monsters in the game. This system would allow the designers to place monster spawners in the Game World, the monster would choose one of the spawners to spawn at, then it would check around itself
+                for the nearest Machine to its' current position and disable it. Then it would audibly taunt the player until the player defeats them by picking them up and throwing them. This system was made up of a lot of smaller considerations, for example: when defeating the monster, should 
+                they die everytime they are thrown no matter the speed thrown? What would happen if the player just taps the grab button on the monster and then leaves them? What if the monster gets stuck outside the players view? These were just some of the considertions that had to be made for 
+                each component of these monsters.
+            </h1>
+            <br>
+            <br>
+
         </section-engine>
         <section-video>
-            
             <br>
             <h2 style="text-align: center;">
-                VIDEO OF THE EXPERIENCE
+                VIDEO OF THE GAME
             </h2>
             <br>
-            <br>
-            <!-- TODO Video of the Game needed -->
+            <div class="video-embed-div">
+                <!-- Link of the Video next to href -->
+                <a href="https://youtu.be/fDOm6hiVwwk" target="_blank">
+                    <!-- Image of the thumbnail -->
+                    <img src="images/screenshots/Boxed Thumbnail.jpg" alt="Game Trailer" style="width: 100%; height: auto;">
+                    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                        <!-- Small Youtube icon -->
+                        <img src="images/icons/Youtube.png" alt="YouTube Logo" style="width: 51.2px; height: 51.2px;">
+                    </div>
+                </a>
+            </div>
         </section-video>
         <footer>    
             <h6 style="color: black;">
@@ -128,7 +155,7 @@
                 <h5>
                     Website Designed by Cody Mills  
                 </h5>
-            </h6>
+            </h3>
         <footer>
     </body>
 </html>
