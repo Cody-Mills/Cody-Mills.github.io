@@ -18,9 +18,6 @@ body {
 
 }
 
-section-gifs {
-  max-width: 10px;
-}
 
 
 .center {
@@ -102,7 +99,6 @@ h6{
   color: white;
   text-align: center;
   font-size: medium;
-
 }
 
 
@@ -209,7 +205,7 @@ padding-left: 50px;
 }
 
 
-/* pc view */
+/* pc view */  
 @media only screen and (min-width: 1024px) and (max-width: 3840px) 
 {
 .mySlides img {
@@ -219,7 +215,7 @@ padding-left: 50px;
 }
 
 /* mobile view */
-@media only screen and (max-device-width: 500px)
+@media (max-width: 500px)
 {
   /* need to fix the title & the sticky nav */
   html, body {
@@ -230,6 +226,7 @@ padding-left: 50px;
   {
       width: 100%;
   }
+     
   h2 { 
       padding-left: 20px;
       padding-right: 20px;
@@ -254,8 +251,7 @@ padding-left: 50px;
     padding-left: 16px;
     padding-right: 16px;
     font-size: 10px;
-    text-align: center;
-  
+    text-align: center
   }
 
   nav {
@@ -298,6 +294,7 @@ padding-left: 50px;
 {
   size: 10%;
 }
+
 
 /* Adjust the dots container */
 .dots-container {
