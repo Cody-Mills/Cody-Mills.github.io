@@ -122,22 +122,7 @@ nav {
     font-size: 20px;
     src: url('/fonts/RINGM___.TTF')"
 }
-  .flex-container {
-      padding-right: 20px;
-      display: block;
-}
 
- /* Adjust the slideshow container size */
- .slideshow-container {
-  max-width: 100%; /* Make the slideshow take the full width */
-  padding-left: 20px; /* Reduce padding for mobile */
-}
-
-/* Adjust the size of the slideshow images */
-.mySlides img {
-  width: 100%; /* Make images take the full width of the container */
-  height: auto; /* Maintain aspect ratio */
-}
 
 /* mobile view */
 @media only screen and (max-device-width: 500px)
@@ -191,40 +176,13 @@ nav {
       display: block;
 }
 
- /* Adjust the slideshow container size */
- .slideshow-container {
-  max-width: 100%; /* Make the slideshow take the full width */
-  padding-left: 20px; /* Reduce padding for mobile */
-}
 
-/* Adjust the size of the slideshow images */
-.mySlides img {
-  width: 100%; /* Make images take the full width of the container */
-  height: auto; /* Maintain aspect ratio */
-}
-
-/* Adjust the size of the dots */
-.dot {
-  width: 20px; /* Smaller dots for mobile */
-  height: 20px; /* Smaller dots for mobile */
-  margin: 0 2px; /* Adjust spacing between dots */
-}
-
-/* Adjust the position and size of the number text */
-.numbertext {
-  font-size: 10px; /* Smaller font size for mobile */
-  padding: 5px 8px; /* Adjust padding */
-}
 
 .image-container
 {
   size: 10%;
 }
 
-/* Adjust the dots container */
-.dots-container {
-  padding: 5px 0; /* Reduce padding for mobile */
-}
 
   div.scroll-container img {
     /*58% of the The image sizes (900x600)*/

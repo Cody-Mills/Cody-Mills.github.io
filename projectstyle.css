@@ -126,6 +126,21 @@ left: 50%;
 transform: translate(-50%, -50%);
 }
 
+div.scroll-container {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+  }
+  
+  div.scroll-container img {
+    /*58% of the The image sizes (900x600)*/
+    max-width: 348px;
+    max-height: 522px;
+    align-self: center;
+    padding: 10px;
+  }
+
 /* Flex container to hold slideshow and h1 text */
 .flex-container {
   display: flex; /* Use flexbox to align children side by side */
@@ -301,6 +316,15 @@ padding-left: 50px;
   padding: 5px 0; /* Reduce padding for mobile */
 }
 
+
+  div.scroll-container img {
+    /*58% of the The image sizes (900x600)*/
+    /* An additional 40% for mobile */
+    max-width: 208px;
+    max-height: 313px;
+    align-self: center;
+    padding: 10px;
+  }
 
 .video-embed-div {
       width: 80%;
