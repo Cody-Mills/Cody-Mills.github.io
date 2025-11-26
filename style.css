@@ -226,6 +226,14 @@ nav {
   padding: 5px 0; /* Reduce padding for mobile */
 }
 
+  div.scroll-container img {
+    /*58% of the The image sizes (900x600)*/
+    /* An additional 40% for mobile */
+    max-width: 208px;
+    max-height: 313px;
+    align-self: center;
+    padding: 10px;
+  }
 
 .video-embed-div {
       width: 80%;
