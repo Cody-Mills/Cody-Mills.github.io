@@ -122,6 +122,22 @@ nav {
     font-size: 20px;
     src: url('/fonts/RINGM___.TTF')"
 }
+  .flex-container {
+      padding-right: 20px;
+      display: block;
+}
+
+ /* Adjust the slideshow container size */
+ .slideshow-container {
+  max-width: 100%; /* Make the slideshow take the full width */
+  padding-left: 20px; /* Reduce padding for mobile */
+}
+
+/* Adjust the size of the slideshow images */
+.mySlides img {
+  width: 100%; /* Make images take the full width of the container */
+  height: auto; /* Maintain aspect ratio */
+}
 
 /* mobile view */
 @media only screen and (max-device-width: 500px)

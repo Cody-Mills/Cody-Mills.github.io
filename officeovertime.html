@@ -3,11 +3,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <head> 
         <!-- This is what the name of the tab is at the top-->
-        <title>Cody Mills - Bug Box Studios</title> 
-        <link rel="stylesheet" href="style.css">
-        
+        <title>Cody Mills - Blank</title> 
+        <link rel="stylesheet" href="projectstyle.css">
+        <style>
+            .software-logos { text-align: center; padding: 20px 0; }
+            .software-logos img { max-width: 15%; height: auto; display: inline-block; }
+            
+            @media (max-width: 500px) {
+                .software-logos img { max-width: 30% !important; display: inline-block; margin-bottom: 10px; }
+            }
+        </style>
     </head>
     <body>
+        <script src="/slideshow.js"></script>
         <header>
             <div class="image-contatiner"><a href="index.html">
                 <img src="/images/title.jpg"
@@ -26,11 +34,11 @@
                 </ul>
             </nav>
         </section-nav>
-        <section-studio>
+        <section-game>
             <!-- Section Title -->
             <br>
-            <h2 style="text-align: left;">
-            NEW GROOVE GAMES - DESCRIPTION
+            <h2>
+            PROJECT NAME - GAME DESCRIPTION
             </h2>
             <br>
 
@@ -41,27 +49,90 @@
 
         <!-- Full-width images with number and caption text -->
         <div class="mySlides">
-            <img src="images/New Groove Games Logo.png">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/screenshots/Photo Missing.png">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/screenshots/Photo Missing.png">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/screenshots/Photo Missing.png">
+        </div>
+
+        <!-- The dots/circles -->
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
     </div>
     <h1 style="text-align: left;">
-        New Groove Games is the name I give the games that I create by myself, all these games are 100% made by me by myself in my freetime. These games range from full games to small projects.
+        <!-- Brief game descripion-->
+        <br>
+        <br>
+        You can play the game on <a href=""> Itch.io here.</a>  </p>
+        <br>
     </h1>
 </div>
-        </section-studio>
-        <section-portfolio>
+        </section-game>
+        <section-engine>
             <br>
             <br>
-            <h2 style="text-align: left;">
-                GAMES MADE BY NEW GROOVE GAMES
+            <h2 style="text-align: center;">
+                TECHNICAL INFORMATION
+            <br>
+            </h2>
+            <h1>
+                
+
+                <br>
+            <h4>
+                This project was developed using no AI. All assets were created by myself.
+                <br>
+                Developed from _.
+            </h4>
+            <section-gifs>
+                <br>
+                <div class="video-embed-div">
+                        <img src="images/screenshots/Photo Missing.png" alt="Gameplay GIF" style="width: 100%; height: auto;">
+                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                        </div>
+                    </a>
+                </div>
+                
+            </section-gifs>
+                <br>
+                <h1>
+                <!-- NEED TO TALK ABOUT ROLE IN TEAM IF APPLICABLE-->
+            </h1>
+            <br>
+            <div class="software-logos">
+            <img src="images/logos/Godot.png" alt="Godot"; style="max-width: 15%;"></a>
+            <img src="images/logos/GDScript.png" alt="GDScript"; style="max-width: 15%;"></a>
+            </div>
+        </section-engine>
+        <section-thoughts>
+            <br>
+                <h1>
+                    Overall, I think                     
+                </h1>
+            <br>
+        </section-thoughts>
+        <section-video>
+            <br>
+            <h2 style="text-align: center;">
+                VIDEO OF THE GAME
             </h2>
             <br>
-                <div class="scroll-container">
-                    <a href="officeovertime.html"><img src="images/posters/Office Overtime Poster.jpg" alt="Office Overtime"></a>        </div>
-    
-        </section-portfolio>
+        </section-video>
         <footer>    
             <h6 style="color: black;">
+                <br>
+                <br>
                 _____________________________________________________________________________________________
                 <br>
                 <br>
@@ -84,7 +155,7 @@
                 <h5>
                     Website Designed by Cody Mills  
                 </h5>
-            </h6>
+            </h3>
         <footer>
     </body>
 </html>
