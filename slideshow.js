@@ -10,7 +10,7 @@ function startAutoSlideshow() {
     setInterval(() => {
         slideIndex++; 
         showSlides(slideIndex);
-    }, 5000); 
+    }, 8000); 
 }
 
 // Initial call to start the automatic slideshow
