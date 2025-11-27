@@ -52,6 +52,10 @@ div.scroll-container {
     padding: 10px;
   }
 
+  div.scroll-container img:hover {
+    transform: scale(1.03);
+  }
+
 ul {
     margin: 0;
     padding: 0;

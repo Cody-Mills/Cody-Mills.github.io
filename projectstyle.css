@@ -141,6 +141,10 @@ div.scroll-container {
     padding: 10px;
   }
 
+  div.scroll-container img:hover {
+    transform: scale(1.03);
+  }
+
 /* Flex container to hold slideshow and h1 text */
 .flex-container {
   display: flex; /* Use flexbox to align children side by side */
