@@ -1,20 +1,5 @@
 let slideIndex = 1;
 
-// Function to control the timer and automatic switching
-function startAutoSlideshow() {
-    // Call showSlides initially
-    showSlides(slideIndex);
-
-    // Set an interval to advance the slide every 5000ms (5 seconds)
-    // We increment slideIndex *before* calling showSlides
-    setInterval(() => {
-        slideIndex++; 
-        showSlides(slideIndex);
-    }, 8000); 
-}
-
-// Initial call to start the automatic slideshow
-startAutoSlideshow(); 
 
 function currentSlide(n) {
   showSlides(slideIndex = n);
@@ -43,4 +28,5 @@ function showSlides(n) {
 
   // Show the current slide. slideIndex is 1-based, array is 0-based.
   slides[slideIndex - 1].style.display = "block";
+  
 }
