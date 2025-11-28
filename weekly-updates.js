@@ -30,3 +30,13 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   
 }
+
+function nextSlide() {
+  slideIndex++; 
+  showSlides(slideIndex);
+}
+
+function prevSlide() {
+  slideIndex--; 
+  showSlides(slideIndex);
+}
