@@ -214,9 +214,14 @@ padding-left: 50px;
   user-select: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 .active, .dot:hover {
   background-color: #717171;
 }
+
 
 /* Fading animation */
 .fade {
