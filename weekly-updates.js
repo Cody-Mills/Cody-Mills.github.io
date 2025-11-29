@@ -1,42 +1,42 @@
-let slideIndex = 1;
+let SlideIndex = 1;
 
 
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  showSlides(SlideIndex = n);
 }
 
-// Main logic to display the slides
+// Main logic to display the Slides
 function showSlides(n) {
   let i;
-  let slides = document.getElementsByClassName("mySlides");
+  let Slides = document.getElementsByClassName("mySlides");
 
-  // Update the global slideIndex variable based on the input n
-  // This is crucial for keeping track of the current slide when 
+  // Update the global SlideIndex variable based on the input n
+  // This is crucial for keeping track of the current Slide when 
   // navigating with thumbnails or next/prev buttons.
-  if (n > slides.length) { 
-      slideIndex = 1; // Loop back to the first slide
+  if (n > Slides.length) { 
+      SlideIndex = 1; // Loop back to the first Slide
   } else if (n < 1) { 
-      slideIndex = slides.length; // Loop to the last slide
+      SlideIndex = Slides.length; // Loop to the last Slide
   } else {
-      slideIndex = n;
+      SlideIndex = n;
   }
 
-  // Hide all slides
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  // Hide all Slides
+  for (i = 0; i < Slides.length; i++) {
+    Slides[i].style.display = "none";
   }
 
-  // Show the current slide. slideIndex is 1-based, array is 0-based.
-  slides[slideIndex - 1].style.display = "block";
+  // Show the current Slide. SlideIndex is 1-based, array is 0-based.
+  Slides[SlideIndex - 1].style.display = "block";
   
 }
 
 function nextSlide() {
-  slideIndex++; 
-  showSlides(slideIndex);
+  SlideIndex++; 
+  showSlides(SlideIndex);
 }
 
 function prevSlide() {
-  slideIndex--; 
-  showSlides(slideIndex);
+  SlideIndex--; 
+  showSlides(SlideIndex);
 }
