@@ -106,22 +106,39 @@
                 Developed from 10th March 2025 - 13th May 2025.
             </h4>
             <section-gifs>
-                <br>
-                <div class="video-embed-div">
-                        <img src="images/gifs/BU monster.gif" alt="Monsters GIF" style="width: 100%; height: auto;">
+                                    <br>
+                                    <div class="video-embed-div">
+                        <img src="images/gifs/BU GIF 1.gif" alt="Monsters GIF" style="width: 100%; height: auto;">
                         <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
                         </div>
                     </a>
                 </div>
-                
+                <br>
             </section-gifs>
                 <br>
                 <h1>
-                My Role in this games development was to mostly develop the game A.I for the little monsters in the game. This system would allow the designers to place monster spawners in the Game World, the monster would choose one of the spawners to spawn at, then it would check around itself
-                for the nearest Machine to its' current position and disable it. Then it would audibly taunt the player until the player defeats them by picking them up and throwing them. This system was made up of a lot of smaller considerations, for example: when defeating the monster, should 
-                they die everytime they are thrown no matter the speed thrown? What would happen if the player just taps the grab button on the monster and then leaves them? What if the monster gets stuck outside the players view? These were just some of the considertions that had to be made for 
-                each component of these monsters.
-            </h1>
+                    My Role in this games development was to mostly develop the game A.I for the little monsters in the game. This system would allow the designers to place monster spawners in the Game World with a visual tool tip, the monster would choose one of the spawners to spawn at. The monster, once spawned automatically turns around and faces the player no matter the orientation the designer places their spawn to remove that as a variable for concern.
+                    <br>
+                    <br>
+                     Then it would check around itself for the nearest Machine to its' current position and disable it which is how the machine will remain until the monster is removed. Then it would audibly taunt the player until the player defeats them by picking them up and throwing them. This system was made up of a lot of smaller considerations, for example: when defeating the monster, should they die every time they are thrown no matter the speed thrown or should there be a threshold that should be met? What would happen if the player just taps the grab button on the monster and then leaves them? What if the monster gets stuck outside the players view? Should they be able to disable multiple machines if they are within range? These were just some of the considerations that had to be made for each component of these monsters. 
+                    <br>
+                    
+                    <br>
+                    The hardest part of developing these monsters was  dealing with the monsters’ animations. Our team’s animator Jackson Terry was very hands off and elusive during this project so during the last 3 days I had to take on the responsibility of implementing animations myself despite having no experience with anything animation. 10 hours before the deadline, Jackson the animator finally sends animations but does not implement them into the myself again and they were on a completely different skeletal model that the one I had used, so overall a very stressful and awful experience with dealing with the monsters animations & our team’s animator in general. If I had more time I would love to have gotten the little monsters to look at the player when they are picked up, this was in my version of the animations but with the skeletal model change I did not have time to implement it but if I were to do it with the skeletal model I would choose to make the monsters rag doll in the players’ hand instead.
+                    <br>
+                <br>
+                    Some of the additional features I made or contributed to was:
+                    <br>
+                </h1>
+                <h1 style="padding-left: 70px;">
+                    1) The General game loop – The whole system of the quotas & timers was developed by me and the submission and categorisation of the boxes was handled by the Tech Lead Dan Burley.
+                    <br>
+                    2) Disabling of the machines – I made they system that allowed the machines to be disabled when the monsters are nearby.
+                    <br>
+                    3) The Info Desk – I made the computer info desk that you can interact with and told the player in world certain details like what the monsters are and what information the monsters are disrupting.
+                    <br>
+                    4) Miscellaneous – I helped implement some of the models from the artists and I did some small tween animations with the submission machine levers and others.
+                </h1>
             <br>
             <div class="software-logos">
                 <img src="images/logos/Unreal Engine.png" alt="Unreal Engine">
