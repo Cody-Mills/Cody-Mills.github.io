@@ -90,13 +90,45 @@
             <br>
             </h2>
             <h1>
-                
-
+                Due to the nature of this project and it being my Studios own private game framework there are certain details that I don't want to publicly display so I will only show off a couple of features to give an idea of the framework's capabilities as well as the design philosophy behind it. 
+            </h1>
+            <h1 style="padding-left: 70px;"> 
                 <br>
+                <br>
+                Some of the features I will cover are:
+                <br>
+                1) Game Controller
+                <br>
+                2) Game States
+                <br>
+                3) Message Bus
+            </h1>
+                <br>
+                <br>
+            <h1>
+                The Game Controller is a manager that is always running during the game (singleton in Unity) which manages all of the levels components as its children having complete control over the game. This is done to allow a one-stop-shop script that can be called globally which can manage the scenes (prefabs in Unity or blueprints in Unreal) in the level and how they work. The biggest feature of the Game Controller is its scene manager. The scene manager keeps track of all the 3D, 2D and GUI nodes running at any given time , this scene manager can then be called to either add a new scene to the list of 3D, 2D and GUI nodes by  adding it to the queue. From there it remains until I want to remove the added scene from the level where I can either pop it out of the queue if I know that it guaranteed is the most recent scene meaning it is still at the back of the queue or, I can manually input the position in the list I want to interact with is and do it that way. After choosing which scene is getting removed I can either let it do the programmed automatic response of freeing the scene from memory, or I  can either keep the scene in memory but unload all the details to allow me to quickly re-instantiate the scene without the performance hit of completely instantiating a new version of that level. This allows for complete control over what is running at any given time and how it is running allowing for a lot of optimisation allowing for easier scaling of the game in the future. 
+                <br>
+                <br>
+                The Game States manager is the second part of the Game Controller that is in charge with keeping track of the games current state to keep behaviour predictable. It uses a simple Enum that contains all the possible game states, e.g. RUNNING, PAUSED, LOADING, CUTSCENE, etc. Having this information always readily available is extremely useful for guaranteeing behaviour and allowing for specific calls ,for example: if the player pauses during a cutscene then it comes up with a different menu from the regular pause that allows them to skip the cutscene or just leave it paused if they would like rather than containing the regular pause options. This is a simple addition to the framework but a powerful one which will keep the codebase maintainable and scaleable. 
+                <br>
+                <br>
+                The Message Bus is a common scripting pattern used in Godot which allows for easy bottom-up communication between scenes allowing for more advanced behaviour without having to guess and expect certain conditions creating vulnerability and errors. This is useful when a scene doesn’t know where the scene it wants to communicate with is going to be, if it will exist and how many of that scene there is going to be. An example of how this Message Bus works is when an enemy dies, the levels total enemy counter needs to be updated so the enemy on death sends out what is called a signal to the Message Bus global script, where it will broadcast that signal to all the scenes in the level that have connected to that data, in this case the script that controls the enemy counter, emits the signal, giving those scenes the information. Additionally, I also added a variable called ‘Emitter’ which is sent along with all Message Bus signals. Emitter is simply the name of the scene that sent out the original signal, this is done to allow for easier debugging as you can easily follow the line of communication without having to guess where it came from.
+                <br>
+                <br>
+            </h1>
+                <div class="software-logos">
+            <img src="images/logos/Godot.png" alt="Godot";</a>
+            <img src="images/logos/GDScript.png" alt="GDScript";></a>
+            <img src="images/logos/CSharp.png" alt="C#"; ></
+            </div>
+            <h1 style="text-align: left;">
+            <br>    
+                <br>
+                These are just a few of the Groovy Engine features that have been implemented and are being planned to be implemented to make game production easier and more optimised. The Engine is constantly being updated with new features and use-cases as I learn from using it what kind of features I need from the Engine. Having this tool helps my efficiency so much due to it being tailored to my specific use cases making the long commitment of developing it and maintaining it worth it in the long run as it now allows me to have a quick jumping off point when starting new game projects.
+            </h1>
             <h4>
                 This project was developed using no AI. All assets were created by myself.
                 <br>
-                Developed from _.
             </h4>
                 <br>
                 <h1>
@@ -112,7 +144,7 @@
         <section-thoughts>
             <br>
                 <h1>
-                    Overall, I think                     
+                                    
                 </h1>
             <br>
         </section-thoughts>
