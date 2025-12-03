@@ -1,22 +1,24 @@
 let slideIndex = 1;
+let autoSlideIntervalID; 
 
 // Function to control the timer and automatic switching
 function startAutoSlideshow() {
-    // Call showSlides initially
+    if (autoSlideIntervalID) {
+        clearInterval(autoSlideIntervalID);
+    }
+    
     showSlides(slideIndex);
 
-    // Set an interval to advance the slide every 5000ms (5 seconds)
-    // We increment slideIndex *before* calling showSlides
-    setInterval(() => {
+    autoSlideIntervalID = setInterval(() => {
         slideIndex++; 
         showSlides(slideIndex);
     }, 8000); 
 }
 
-// Initial call to start the automatic slideshow
 startAutoSlideshow(); 
 
 function currentSlide(n) {
+  resetAutoSlideshowTimer(); 
   showSlides(slideIndex = n);
 }
 
@@ -25,13 +27,10 @@ function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
 
-  // Update the global slideIndex variable based on the input n
-  // This is crucial for keeping track of the current slide when 
-  // navigating with thumbnails or next/prev buttons.
   if (n > slides.length) { 
-      slideIndex = 1; // Loop back to the first slide
+      slideIndex = 1; 
   } else if (n < 1) { 
-      slideIndex = slides.length; // Loop to the last slide
+      slideIndex = slides.length; 
   } else {
       slideIndex = n;
   }
@@ -41,6 +40,13 @@ function showSlides(n) {
     slides[i].style.display = "none";
   }
 
-  // Show the current slide. slideIndex is 1-based, array is 0-based.
   slides[slideIndex - 1].style.display = "block";
+}
+
+function resetAutoSlideshowTimer() {
+    
+    clearInterval(autoSlideIntervalID);
+    
+    
+    startAutoSlideshow(); 
 }
