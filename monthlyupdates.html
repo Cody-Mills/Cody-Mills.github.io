@@ -73,15 +73,18 @@
 
 
         </div>
-        <br>
+
+        
         <div class="update-buttons" style="text-align: center; transform: scale(1.5); src: url('/fonts/Oswald.ttf');">
             <br>
             <input type="button" style="font-family: Oswald; src: url('/fonts/Oswald.ttf'); font-size: 14px; margin: 10px;" value="PREV PAGE" onclick="prevSlide();"/>
-        
+            <input style="max-width: 2%;" id="currentPage">
             <input type="button" style="font-family: Oswald; src: url('/fonts/Oswald.ttf'); font-size: 14px; margin: 10px;" value="NEXT PAGE" onclick="nextSlide();"/>
             
         </div>
-        
+                <h3 style="color: black; text-align: center;">
+            Page
+        </h3>
             </section-updates>
         <footer>    
             <h6 style="color: black;">
@@ -113,6 +116,7 @@
             </h6>
         </footer>
         <script src="/monthly-updates.js"></script>
+        <script src="/search-pages.js"></script>
     </body>
 </html>
 
