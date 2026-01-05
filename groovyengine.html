@@ -13,6 +13,8 @@
                 .software-logos img { max-width: 30% !important; display: inline-block; margin-bottom: 10px; }
                 .available-on-steam img { max-width: 100% !important; padding-left: 5% !important;}
                 .play-button img { width: 51.2px !important; height: 51.2px !important;}
+                h2 { margin-left: 0px !important; margin-right: 0px !important;}
+                h1 { margin-left: 0px !important; margin-right: 0px !important;}
             }
         </style>
     </head>
@@ -89,10 +91,10 @@
                 TECHNICAL INFORMATION
             <br>
             </h2>
-            <h1>
+            <h1 style="margin-left: 60px; margin-right: 60px;">
                 Due to the nature of this project and it being my Studios own private game framework there are certain details that I don't want to publicly display so I will only show off a couple of features to give an idea of the framework's capabilities as well as the design philosophy behind it. 
             </h1>
-            <h1 style="padding-left: 70px;"> 
+            <h1 style="margin-left: 130px; margin-right: 60px;"> 
                 <br>
                 <br>
                 Some of the features I will cover are:
@@ -105,7 +107,7 @@
             </h1>
                 <br>
                 <br>
-            <h1>
+            <h1 style="margin-left: 60px; margin-right: 60px;">
                 The Game Controller is a manager that is always running during the game (singleton in Unity) which manages all of the levels components as its children having complete control over the game. This is done to allow a one-stop-shop script that can be called globally which can manage the scenes (prefabs in Unity or blueprints in Unreal) in the level and how they work. The biggest feature of the Game Controller is its scene manager. The scene manager keeps track of all the 3D, 2D and GUI nodes running at any given time , this scene manager can then be called to either add a new scene to the list of 3D, 2D and GUI nodes by  adding it to the queue. From there it remains until I want to remove the added scene from the level where I can either pop it out of the queue if I know that it guaranteed is the most recent scene meaning it is still at the back of the queue or, I can manually input the position in the list I want to interact with is and do it that way. After choosing which scene is getting removed I can either let it do the programmed automatic response of freeing the scene from memory, or I  can either keep the scene in memory but unload all the details to allow me to quickly re-instantiate the scene without the performance hit of completely instantiating a new version of that level. This allows for complete control over what is running at any given time and how it is running allowing for a lot of optimisation allowing for easier scaling of the game in the future. 
                 <br>
                 <br>
@@ -118,10 +120,10 @@
             </h1>
                 <div class="software-logos">
             <img src="images/logos/Godot.png" alt="Godot";</a>
+            <img src="images/logos/CSharp.png" alt="C#"; ></a>
             <img src="images/logos/GDScript.png" alt="GDScript";></a>
-            <img src="images/logos/CSharp.png" alt="C#"; ></
             </div>
-            <h1 style="text-align: left;">
+            <h1 style="text-align: left; margin-left: 60px; margin-right: 60px;">
             <br>    
                 <br>
                 These are just a few of the Groovy Engine features that have been implemented and are being planned to be implemented to make game production easier and more optimised. The Engine is constantly being updated with new features and use-cases as I learn from using it what kind of features I need from the Engine. Having this tool helps my efficiency so much due to it being tailored to my specific use cases making the long commitment of developing it and maintaining it worth it in the long run as it now allows me to have a quick jumping off point when starting new game projects.
@@ -135,11 +137,6 @@
                 <!-- NEED TO TALK ABOUT ROLE IN TEAM IF APPLICABLE-->
             </h1>
             <br>
-            <div class="software-logos">
-            <img src="images/logos/Godot.png" alt="Godot";</a>
-            <img src="images/logos/GDScript.png" alt="GDScript";></a>
-            <img src="images/logos/CSharp.png" alt="C#"; ></
-            </div>
         </section-engine>
         <section-thoughts>
             <br>

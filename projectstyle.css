@@ -64,8 +64,9 @@ nav {
 /* General Text */
 h1 {
   flex: 1; /* Allow the h1 text to take up remaining space */
-  padding-left: 50px; /* Add some padding */
+  padding-left: 50px; 
   padding-right: 50px;
+  
   color: white; 
   font-size: 22px;
   margin: 0;
