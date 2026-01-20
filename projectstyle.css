@@ -178,7 +178,7 @@ div.scroll-container {
     display:-ms-grid;
     background-color: #333;
     /* white-space: nowrap; */
-    padding: 20px 10px 20px 70px;
+    padding: 10px 10px 10px 70px;
   }
 
   div.grid-container img {
