@@ -173,6 +173,28 @@ div.scroll-container {
     transform: scale(1.03);
   }
 
+  div.grid-container {
+
+    display:-ms-grid;
+    background-color: #333;
+    /* white-space: nowrap; */
+    padding: 20px 10px 20px 70px;
+  }
+
+  div.grid-container img {
+    /*58% of the The image sizes (900x600)*/
+    
+    max-width: 348px;
+    max-height: 522px;
+    align-self: center;
+    padding: 10px;
+  }
+
+  div.grid-container img:hover {
+    transform: scale(1.03);
+  }
+
+
 /* Flex container to hold slideshow and h1 text */
 .flex-container {
   display: flex; /* Use flexbox to align children side by side */
@@ -366,6 +388,15 @@ padding-left: 50px;
     max-height: 313px;
     align-self: center;
     padding: 10px;
+  }
+
+    div.grid-container img {
+    /*58% of the The image sizes (900x600)*/
+    /* An additional 40% for mobile */
+    max-width: 104px;
+    max-height: 156.6px;
+    align-self: center;
+    padding: 2px;
   }
 
 .video-embed-div {
