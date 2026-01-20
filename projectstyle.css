@@ -390,11 +390,16 @@ padding-left: 50px;
     padding: 10px;
   }
 
+  div.grid-container {
+    padding: 5px;
+  }
+
     div.grid-container img {
-    /*58% of the The image sizes (900x600)*/
+      /*58% of the The image sizes (900x600)*/
     /* An additional 40% for mobile */
-    max-width: 104px;
-    max-height: 156.6px;
+    /* scroll container img * 0.45 */
+    max-width: 99.84px;
+    max-height: 150.24px;
     align-self: center;
     padding: 2px;
   }
